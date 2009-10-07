@@ -1,0 +1,90 @@
+body {
+  font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+}
+
+.item {
+  border: 0;
+}
+
+.item:first-child {
+  margin-top: 5px;
+}
+
+.item:nth-last-child(-2n) {
+  margin-bottom: 5px;
+}
+
+.iterationHeader,
+.storyItem,
+.unstarted,
+.newStory,
+.unscheduled {
+  border: 0;
+  margin: 1px 5px 0;
+}
+
+.storyItem,
+.unstarted,
+.newStory,
+.unscheduled {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 3px 3px #899;
+  -moz-box-shadow: 0 3px 3px #899;
+  -webkit-box-shadow: 0 3px 3px #899;
+}
+
+.storyItem {
+  background: #f7f7f7;
+}
+
+.iterationHeader {
+  background: transparent;
+  margin-top: 15px;
+}
+
+.iterationHeader td {
+  background: transparent !important;
+  text-shadow: 0 1px 1px #ddd;
+}
+
+.iterationHeader td,
+.iterationHeader a.date_label {
+  color: #424242 !important;
+  font-size: 10px;
+}
+
+.iterationHeader a.date_label {
+  font-weight: bold !important;
+}
+
+.storyFlyover.flyover {
+  background: rgba(0, 0, 0, .9);
+  border: 2px solid rgba(255, 255, 255, .5);
+  color: #fff;
+}
+
+.storyFlyover.flyover .flyoverContent {
+  background: transparent;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.storyFlyover.flyover .storyId {
+  margin: 0 12px;
+}
+
+.storyFlyover.flyover .flyoverContent.storyDetails .section {
+  color: #ddd;
+}
+
+.storyFlyover.flyover .flyoverContent.storyDetails .section .header {
+  display: none;
+}
+
+.storyFlyover.flyover .flyoverContent.storyDetails table, 
+.storyFlyover.flyover .flyoverContent.storyDetails .descriptionText {
+  margin: 1.1em;
+}
